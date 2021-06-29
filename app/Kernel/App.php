@@ -6,19 +6,19 @@ namespace App\Kernel;
 
 class App
 {
-    public static string $appName = '';
+    public static string $name;
 
-    public static function getAppName(): string
+    public static function getName(): string
     {
-        if (!self::$appName) {
+        if (!self::$name) {
             self::init();
         }
 
-        return self::$appName;
+        return self::$name;
     }
 
     public static function init(): void
     {
-        self::$appName = config('app_name');
+        self::$name = (string) config('app_name');
     }
 }

@@ -9,7 +9,7 @@ use Hyperf\Event\Annotation\Listener;
 use Hyperf\Event\Contract\ListenerInterface;
 use Hyperf\Framework\Event\BeforeMainServerStart;
 
-#[Listener]
+#[Listener()]
 class AppNameListener implements ListenerInterface
 {
 
