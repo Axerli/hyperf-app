@@ -16,5 +16,7 @@ return [
 
     \Hyperf\SocketIOServer\SocketIO::class => \App\Kernel\Socket\SocketIOFactory::class,
 
+    \Hyperf\SocketIOServer\Room\AdapterInterface::class => \App\Kernel\Socket\RedisAdapter::class,
+
     \App\Service\Socket\SidMapService::class => \App\Service\Socket\SidMap::class,
 ];
