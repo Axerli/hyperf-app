@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b02632395a7d113e716999b449c2d6ad",
+    "content-hash": "8e1d4f11daad7965e67ed92d8c6532cb",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -2069,6 +2069,66 @@
             "time": "2021-05-24T07:50:44+00:00"
         },
         {
+            "name": "hyperf/socketio-server",
+            "version": "v2.2.0-beta2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hyperf/socketio-server.git",
+                "reference": "cfbd85b0cbf735eaad7fb137da18afd068615b59"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hyperf/socketio-server/zipball/cfbd85b0cbf735eaad7fb137da18afd068615b59",
+                "reference": "cfbd85b0cbf735eaad7fb137da18afd068615b59",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-redis": "*",
+                "ext-swoole": ">=4.4",
+                "hyperf/di": "~2.2.0",
+                "hyperf/redis": "~2.2.0",
+                "hyperf/websocket-server": "~2.2.0",
+                "mix/redis-subscribe": "^2.1",
+                "php": ">=7.2"
+            },
+            "suggest": {
+                "hyperf/command": "Required to use RemoveRedisGarbage command",
+                "hyperf/nsq": "Required to use RedisNsqAdapter",
+                "hyperf/session": "Required to use session"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1-dev"
+                },
+                "hyperf": {
+                    "config": "Hyperf\\SocketIOServer\\ConfigProvider"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Hyperf\\SocketIOServer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Socket.io implementation for hyperf",
+            "keywords": [
+                "hyperf",
+                "php"
+            ],
+            "time": "2021-06-15T15:48:30+00:00"
+        },
+        {
             "name": "hyperf/utils",
             "version": "v2.2.0-beta2",
             "source": {
@@ -2132,6 +2192,64 @@
                 "utils"
             ],
             "time": "2021-06-15T15:48:30+00:00"
+        },
+        {
+            "name": "hyperf/websocket-server",
+            "version": "v2.2.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hyperf/websocket-server.git",
+                "reference": "972f2b01ba22749fabb8cd95f1a00899e1dbdbea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hyperf/websocket-server/zipball/972f2b01ba22749fabb8cd95f1a00899e1dbdbea",
+                "reference": "972f2b01ba22749fabb8cd95f1a00899e1dbdbea",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "hyperf/contract": "~2.2.0",
+                "hyperf/exception-handler": "~2.2.0",
+                "hyperf/http-server": "~2.2.0",
+                "hyperf/utils": "~2.2.0",
+                "php": ">=7.2",
+                "psr/container": "^1.0|^2.0",
+                "psr/event-dispatcher": "^1.0",
+                "psr/log": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1-dev"
+                },
+                "hyperf": {
+                    "config": "Hyperf\\WebSocketServer\\ConfigProvider"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Hyperf\\WebSocketServer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A websocket server library for Hyperf.",
+            "homepage": "https://hyperf.io",
+            "keywords": [
+                "hyperf",
+                "php",
+                "swoole",
+                "websocket"
+            ],
+            "time": "2021-05-24T07:50:44+00:00"
         },
         {
             "name": "laminas/laminas-mime",
@@ -2312,6 +2430,59 @@
                 }
             ],
             "time": "2021-06-24T12:49:22+00:00"
+        },
+        {
+            "name": "mix/redis-subscribe",
+            "version": "v2.2.16",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mix-php/redis-subscribe.git",
+                "reference": "85ac4516791e584f3cebee6e4ae2383067bd1517"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mix-php/redis-subscribe/zipball/85ac4516791e584f3cebee6e4ae2383067bd1517",
+                "reference": "85ac4516791e584f3cebee6e4ae2383067bd1517",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-swoole": ">=4.4.4",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Mix\\Redis\\Subscribe\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "liu,jian",
+                    "email": "coder.keda@gmail.com"
+                }
+            ],
+            "description": "Redis subscribe library based on Swoole coroutine",
+            "homepage": "https://openmix.org/",
+            "keywords": [
+                "mix",
+                "redis",
+                "subscribe",
+                "swoole"
+            ],
+            "time": "2020-10-26T09:06:52+00:00"
         },
         {
             "name": "monolog/monolog",

@@ -26,7 +26,8 @@
         "hyperf/logger": "2.2.*",
         "hyperf/memory": "2.2.*",
         "hyperf/process": "2.2.*",
-        "hyperf/redis": "2.2.*"
+        "hyperf/redis": "2.2.*",
+        "hyperf/socketio-server": "2.2.*"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.14",
