@@ -16,17 +16,17 @@ class Setting
     }
 
     /**
-     * @return mixed|string
+     * @return string
      */
-    public function getMinVersion(): mixed
+    public function getMinVersion()
     {
         return $this->minVersion;
     }
 
     /**
-     * @return mixed|string
+     * @return string
      */
-    public function getScriptPath(): mixed
+    public function getScriptPath()
     {
         return $this->scriptPath;
     }
