@@ -85,6 +85,9 @@
             "Composer\\Config::disableProcessTimeout",
             "Env\\VersionControl::swap",
             "php ./bin/hyperf.php server:watch"
+        ],
+        "version-swap": [
+            "Env\\VersionControl::swap"
         ]
     }
 }

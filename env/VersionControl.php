@@ -8,7 +8,7 @@ class VersionControl
     {
         $setting = Setting::instance();
 
-        if (version_compare($setting->getMinVersion(), PHP_VERSION) >= 0) {
+        if (version_compare(PHP_VERSION, $setting->getMinVersion()) >= 0) {
             return;
         }
 
