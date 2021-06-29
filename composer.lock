@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8e1d4f11daad7965e67ed92d8c6532cb",
+    "content-hash": "2a5d8afbd6e61290b7c71dcbc9c2198e",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -387,6 +387,65 @@
                 "response"
             ],
             "time": "2020-11-24T22:02:12+00:00"
+        },
+        {
+            "name": "fzaninotto/faker",
+            "version": "v1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fzaninotto/Faker.git",
+                "reference": "d0190b156bcca848d401fb80f31f504f37141c8d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/d0190b156bcca848d401fb80f31f504f37141c8d",
+                "reference": "d0190b156bcca848d401fb80f31f504f37141c8d",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "~1.5"
+            },
+            "suggest": {
+                "ext-intl": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.5.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Faker\\": "src/Faker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "François Zaninotto"
+                }
+            ],
+            "description": "Faker is a PHP library that generates fake data for you.",
+            "keywords": [
+                "data",
+                "faker",
+                "fixtures"
+            ],
+            "abandoned": true,
+            "time": "2015-05-29T06:29:14+00:00"
         },
         {
             "name": "graham-campbell/result-type",
@@ -2584,16 +2643,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.49.0",
+            "version": "2.50.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "93d9db91c0235c486875d22f1e08b50bdf3e6eee"
+                "reference": "f47f17d17602b2243414a44ad53d9f8b9ada5fdb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/93d9db91c0235c486875d22f1e08b50bdf3e6eee",
-                "reference": "93d9db91c0235c486875d22f1e08b50bdf3e6eee",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/f47f17d17602b2243414a44ad53d9f8b9ada5fdb",
+                "reference": "f47f17d17602b2243414a44ad53d9f8b9ada5fdb",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -2651,15 +2710,15 @@
                 {
                     "name": "Brian Nesbitt",
                     "email": "brian@nesbot.com",
-                    "homepage": "http://nesbot.com"
+                    "homepage": "https://markido.com"
                 },
                 {
                     "name": "kylekatarnls",
-                    "homepage": "http://github.com/kylekatarnls"
+                    "homepage": "https://github.com/kylekatarnls"
                 }
             ],
             "description": "An API extension for DateTime that supports 281 different languages.",
-            "homepage": "http://carbon.nesbot.com",
+            "homepage": "https://carbon.nesbot.com",
             "keywords": [
                 "date",
                 "datetime",
@@ -2675,7 +2734,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-06-02T07:31:40+00:00"
+            "time": "2021-06-28T22:38:45+00:00"
         },
         {
             "name": "nikic/fast-route",

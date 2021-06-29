@@ -15,7 +15,7 @@ class RedisAdapter extends BaseRedisAdapter
 {
     public function __construct(RedisFactory $redis, Sender $sender, NamespaceInterface $nsp, SidProviderInterface $sidProvider)
     {
-        $this->redisPrefix = App::$appName . ':' . $this->redisPrefix;
+        $this->redisPrefix = App::$name . ':' . $this->redisPrefix;
 
         parent::__construct($redis, $sender, $nsp, $sidProvider);
     }

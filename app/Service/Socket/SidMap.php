@@ -4,7 +4,6 @@ declare(strict_types = 1);
 
 namespace App\Service\Socket;
 
-
 use App\Kernel\App;
 use Hyperf\Di\Annotation\Inject;
 use Hyperf\Redis\Redis;
@@ -57,7 +56,7 @@ class SidMap implements SidMapService
     protected function sidMapCacheKey(): string
     {
         return implode(':', [
-            App::$appName,
+            App::$name,
             'user_sid_map',
         ]);
     }
