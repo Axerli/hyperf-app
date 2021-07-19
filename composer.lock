@@ -679,16 +679,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "1.8.2",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "dc960a912984efb74d0a90222870c72c87f10c91"
+                "reference": "1dc8d9cba3897165e16d12bb13d813afb1eb3fe7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/dc960a912984efb74d0a90222870c72c87f10c91",
-                "reference": "dc960a912984efb74d0a90222870c72c87f10c91",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/1dc8d9cba3897165e16d12bb13d813afb1eb3fe7",
+                "reference": "1dc8d9cba3897165e16d12bb13d813afb1eb3fe7",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -698,16 +698,19 @@
                 ]
             },
             "require": {
-                "php": ">=5.4.0",
-                "psr/http-message": "~1.0",
-                "ralouphie/getallheaders": "^2.0.5 || ^3.0.0"
+                "php": "^7.2.5 || ^8.0",
+                "psr/http-factory": "^1.0",
+                "psr/http-message": "^1.0",
+                "ralouphie/getallheaders": "^3.0"
             },
             "provide": {
+                "psr/http-factory-implementation": "1.0",
                 "psr/http-message-implementation": "1.0"
             },
             "require-dev": {
-                "ext-zlib": "*",
-                "phpunit/phpunit": "~4.8.36 || ^5.7.27 || ^6.5.14 || ^7.5.20 || ^8.5.8 || ^9.3.10"
+                "bamarni/composer-bin-plugin": "^1.4.1",
+                "http-interop/http-factory-tests": "^0.9",
+                "phpunit/phpunit": "^8.5.8 || ^9.3.10"
             },
             "suggest": {
                 "laminas/laminas-httphandlerrunner": "Emit PSR-7 responses"
@@ -715,16 +718,13 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.7-dev"
+                    "dev-master": "2.0-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
                     "GuzzleHttp\\Psr7\\": "src/"
-                },
-                "files": [
-                    "src/functions_include.php"
-                ]
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -739,6 +739,11 @@
                 {
                     "name": "Tobias Schultze",
                     "homepage": "https://github.com/Tobion"
+                },
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com",
+                    "homepage": "https://sagikazarmark.hu"
                 }
             ],
             "description": "PSR-7 message implementation that also provides common utility methods",
@@ -752,20 +757,20 @@
                 "uri",
                 "url"
             ],
-            "time": "2021-04-26T09:17:50+00:00"
+            "time": "2021-06-30T20:03:07+00:00"
         },
         {
             "name": "hyperf/async-queue",
-            "version": "v2.2.0-beta2",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/async-queue.git",
-                "reference": "0c2a55ac44cad18a7b37f40f168fef554e25b1e8"
+                "reference": "5ce9c99fe26b893df03bcc0b8a903cd97a85d8fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/async-queue/zipball/0c2a55ac44cad18a7b37f40f168fef554e25b1e8",
-                "reference": "0c2a55ac44cad18a7b37f40f168fef554e25b1e8",
+                "url": "https://api.github.com/repos/hyperf/async-queue/zipball/5ce9c99fe26b893df03bcc0b8a903cd97a85d8fb",
+                "reference": "5ce9c99fe26b893df03bcc0b8a903cd97a85d8fb",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -791,7 +796,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 },
                 "hyperf": {
                     "config": "Hyperf\\AsyncQueue\\ConfigProvider"
@@ -813,20 +818,20 @@
                 "hyperf",
                 "php"
             ],
-            "time": "2021-06-15T15:48:30+00:00"
+            "time": "2021-07-18T06:50:14+00:00"
         },
         {
             "name": "hyperf/cache",
-            "version": "v2.2.0-beta2",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/cache.git",
-                "reference": "8777945b2973bf10742b662e5b3201f16bd7f332"
+                "reference": "a965eff26fd2acc2557ef557b80e121cdae57b95"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/cache/zipball/8777945b2973bf10742b662e5b3201f16bd7f332",
-                "reference": "8777945b2973bf10742b662e5b3201f16bd7f332",
+                "url": "https://api.github.com/repos/hyperf/cache/zipball/a965eff26fd2acc2557ef557b80e121cdae57b95",
+                "reference": "a965eff26fd2acc2557ef557b80e121cdae57b95",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -849,7 +854,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 },
                 "hyperf": {
                     "config": "Hyperf\\Cache\\ConfigProvider"
@@ -871,20 +876,20 @@
                 "hyperf",
                 "php"
             ],
-            "time": "2021-06-15T15:48:30+00:00"
+            "time": "2021-07-18T06:50:14+00:00"
         },
         {
             "name": "hyperf/command",
-            "version": "v2.2.0-beta2",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/command.git",
-                "reference": "196a2d1c42c0c9c7591b1c4c3c91f07677960a00"
+                "reference": "805df76bc390d754e1d37fbaea26a7401f2912c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/command/zipball/196a2d1c42c0c9c7591b1c4c3c91f07677960a00",
-                "reference": "196a2d1c42c0c9c7591b1c4c3c91f07677960a00",
+                "url": "https://api.github.com/repos/hyperf/command/zipball/805df76bc390d754e1d37fbaea26a7401f2912c2",
+                "reference": "805df76bc390d754e1d37fbaea26a7401f2912c2",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -905,7 +910,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 }
             },
             "autoload": {
@@ -923,20 +928,20 @@
                 "php",
                 "swoole"
             ],
-            "time": "2021-06-15T15:48:30+00:00"
+            "time": "2021-07-18T06:50:14+00:00"
         },
         {
             "name": "hyperf/config",
-            "version": "v2.2.0-beta2",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/config.git",
-                "reference": "4ec2f06950290a194ad3670712f5a53008c5164e"
+                "reference": "ccdcc79ec244612c04f186e65b222ad778db75e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/config/zipball/4ec2f06950290a194ad3670712f5a53008c5164e",
-                "reference": "4ec2f06950290a194ad3670712f5a53008c5164e",
+                "url": "https://api.github.com/repos/hyperf/config/zipball/ccdcc79ec244612c04f186e65b222ad778db75e9",
+                "reference": "ccdcc79ec244612c04f186e65b222ad778db75e9",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -961,7 +966,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 },
                 "hyperf": {
                     "config": "Hyperf\\Config\\ConfigProvider"
@@ -988,20 +993,20 @@
                 "php",
                 "swoole"
             ],
-            "time": "2021-06-15T15:48:30+00:00"
+            "time": "2021-07-18T06:50:14+00:00"
         },
         {
             "name": "hyperf/constants",
-            "version": "v2.2.0-beta2",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/constants.git",
-                "reference": "a6ab732445dbffa7c0f8a0b0669c5cdca743cf8e"
+                "reference": "7568ff95958644d8c8143f6c534653930c3d23d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/constants/zipball/a6ab732445dbffa7c0f8a0b0669c5cdca743cf8e",
-                "reference": "a6ab732445dbffa7c0f8a0b0669c5cdca743cf8e",
+                "url": "https://api.github.com/repos/hyperf/constants/zipball/7568ff95958644d8c8143f6c534653930c3d23d2",
+                "reference": "7568ff95958644d8c8143f6c534653930c3d23d2",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1021,7 +1026,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 },
                 "hyperf": {
                     "config": "Hyperf\\Constants\\ConfigProvider"
@@ -1043,20 +1048,20 @@
                 "hyperf",
                 "php"
             ],
-            "time": "2021-06-15T15:48:30+00:00"
+            "time": "2021-07-18T06:50:14+00:00"
         },
         {
             "name": "hyperf/contract",
-            "version": "v2.2.0-beta1",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/contract.git",
-                "reference": "71d62d6ef5fc04846067c6072f26ef8b450f1e22"
+                "reference": "62004fbfc9718068522a88975777385db5e0f2e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/contract/zipball/71d62d6ef5fc04846067c6072f26ef8b450f1e22",
-                "reference": "71d62d6ef5fc04846067c6072f26ef8b450f1e22",
+                "url": "https://api.github.com/repos/hyperf/contract/zipball/62004fbfc9718068522a88975777385db5e0f2e3",
+                "reference": "62004fbfc9718068522a88975777385db5e0f2e3",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1071,7 +1076,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 }
             },
             "autoload": {
@@ -1090,20 +1095,20 @@
                 "php",
                 "swoole"
             ],
-            "time": "2021-05-11T08:15:42+00:00"
+            "time": "2021-07-18T06:50:14+00:00"
         },
         {
             "name": "hyperf/database",
-            "version": "v2.2.0-beta1",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/database.git",
-                "reference": "a97aa0c348326ade2175b98e15be9a24398925e8"
+                "reference": "c7ee5bc81030149487c00440aa95599c6c7e33be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/database/zipball/a97aa0c348326ade2175b98e15be9a24398925e8",
-                "reference": "a97aa0c348326ade2175b98e15be9a24398925e8",
+                "url": "https://api.github.com/repos/hyperf/database/zipball/c7ee5bc81030149487c00440aa95599c6c7e33be",
+                "reference": "c7ee5bc81030149487c00440aa95599c6c7e33be",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1126,7 +1131,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 }
             },
             "autoload": {
@@ -1145,20 +1150,20 @@
                 "hyperf",
                 "php"
             ],
-            "time": "2021-06-05T04:30:59+00:00"
+            "time": "2021-07-18T06:50:14+00:00"
         },
         {
             "name": "hyperf/db-connection",
-            "version": "v2.2.0-beta2",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/db-connection.git",
-                "reference": "c30f1e8b626e86fdd0cde72fbbd5dc3242cf5a7a"
+                "reference": "ac0e407330a33e823d9eab3798d0735a70c64ff2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/db-connection/zipball/c30f1e8b626e86fdd0cde72fbbd5dc3242cf5a7a",
-                "reference": "c30f1e8b626e86fdd0cde72fbbd5dc3242cf5a7a",
+                "url": "https://api.github.com/repos/hyperf/db-connection/zipball/ac0e407330a33e823d9eab3798d0735a70c64ff2",
+                "reference": "ac0e407330a33e823d9eab3798d0735a70c64ff2",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1179,7 +1184,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 },
                 "hyperf": {
                     "config": "Hyperf\\DbConnection\\ConfigProvider"
@@ -1202,20 +1207,20 @@
                 "hyperf",
                 "php"
             ],
-            "time": "2021-06-15T15:48:30+00:00"
+            "time": "2021-07-18T06:50:14+00:00"
         },
         {
             "name": "hyperf/di",
-            "version": "v2.2.0-beta2",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/di.git",
-                "reference": "5ecf8bb9c210fa1f042fa52bf4c9dcff32347005"
+                "reference": "b913183eafd8c1bf47e9ef03ca3dc10e20fdd58f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/di/zipball/5ecf8bb9c210fa1f042fa52bf4c9dcff32347005",
-                "reference": "5ecf8bb9c210fa1f042fa52bf4c9dcff32347005",
+                "url": "https://api.github.com/repos/hyperf/di/zipball/b913183eafd8c1bf47e9ef03ca3dc10e20fdd58f",
+                "reference": "b913183eafd8c1bf47e9ef03ca3dc10e20fdd58f",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1240,7 +1245,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 },
                 "hyperf": {
                     "config": "Hyperf\\Di\\ConfigProvider"
@@ -1264,20 +1269,20 @@
                 "php",
                 "swoole"
             ],
-            "time": "2021-06-15T16:27:11+00:00"
+            "time": "2021-07-18T06:50:14+00:00"
         },
         {
             "name": "hyperf/dispatcher",
-            "version": "v2.2.0-beta1",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/dispatcher.git",
-                "reference": "219dccc0737926cd0a66dca9c23d7ad643a637f8"
+                "reference": "fdd464fe5fac01c60732eddc2da7c3184e93995c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/dispatcher/zipball/219dccc0737926cd0a66dca9c23d7ad643a637f8",
-                "reference": "219dccc0737926cd0a66dca9c23d7ad643a637f8",
+                "url": "https://api.github.com/repos/hyperf/dispatcher/zipball/fdd464fe5fac01c60732eddc2da7c3184e93995c",
+                "reference": "fdd464fe5fac01c60732eddc2da7c3184e93995c",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1296,7 +1301,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 },
                 "hyperf": {
                     "config": "Hyperf\\Dispatcher\\ConfigProvider"
@@ -1321,20 +1326,20 @@
                 "php",
                 "swoole"
             ],
-            "time": "2021-05-11T08:15:42+00:00"
+            "time": "2021-07-18T06:50:14+00:00"
         },
         {
             "name": "hyperf/engine",
-            "version": "v1.1.5",
+            "version": "v1.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/engine.git",
-                "reference": "3e09a916a422d692cab07b0dd3555aff0ab3bd30"
+                "reference": "f583f01f458f8c69080e06e6dce715c86edc9f86"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/engine/zipball/3e09a916a422d692cab07b0dd3555aff0ab3bd30",
-                "reference": "3e09a916a422d692cab07b0dd3555aff0ab3bd30",
+                "url": "https://api.github.com/repos/hyperf/engine/zipball/f583f01f458f8c69080e06e6dce715c86edc9f86",
+                "reference": "f583f01f458f8c69080e06e6dce715c86edc9f86",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1374,20 +1379,20 @@
                 "hyperf",
                 "php"
             ],
-            "time": "2021-06-23T02:38:04+00:00"
+            "time": "2021-07-11T10:22:13+00:00"
         },
         {
             "name": "hyperf/event",
-            "version": "v2.2.0-beta2",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/event.git",
-                "reference": "5dcd56099edbc083c1d42530d3095c066dc5e67f"
+                "reference": "9c2ab56737d080d799b9b1f905716c7bf0d61ef6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/event/zipball/5dcd56099edbc083c1d42530d3095c066dc5e67f",
-                "reference": "5dcd56099edbc083c1d42530d3095c066dc5e67f",
+                "url": "https://api.github.com/repos/hyperf/event/zipball/9c2ab56737d080d799b9b1f905716c7bf0d61ef6",
+                "reference": "9c2ab56737d080d799b9b1f905716c7bf0d61ef6",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1407,7 +1412,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 },
                 "hyperf": {
                     "config": "Hyperf\\Event\\ConfigProvider"
@@ -1430,20 +1435,20 @@
                 "php",
                 "swoole"
             ],
-            "time": "2021-06-15T15:48:30+00:00"
+            "time": "2021-07-18T06:50:14+00:00"
         },
         {
             "name": "hyperf/exception-handler",
-            "version": "v2.2.0-beta2",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/exception-handler.git",
-                "reference": "651e8b9ecaabc98e726bc73949b2d2f576d51b3e"
+                "reference": "4e10fc994e06940a91704b248e389bf96f70ca10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/exception-handler/zipball/651e8b9ecaabc98e726bc73949b2d2f576d51b3e",
-                "reference": "651e8b9ecaabc98e726bc73949b2d2f576d51b3e",
+                "url": "https://api.github.com/repos/hyperf/exception-handler/zipball/4e10fc994e06940a91704b248e389bf96f70ca10",
+                "reference": "4e10fc994e06940a91704b248e389bf96f70ca10",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1463,7 +1468,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 },
                 "hyperf": {
                     "config": "Hyperf\\ExceptionHandler\\ConfigProvider"
@@ -1485,20 +1490,20 @@
                 "php",
                 "swoole"
             ],
-            "time": "2021-06-15T15:48:30+00:00"
+            "time": "2021-07-18T06:50:14+00:00"
         },
         {
             "name": "hyperf/framework",
-            "version": "v2.2.0-beta1",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/framework.git",
-                "reference": "ccb1e9730a27604fd6b55c2d220de102e22082f4"
+                "reference": "0b27f9c6068c74c971e06aa7f44f4c9138844a8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/framework/zipball/ccb1e9730a27604fd6b55c2d220de102e22082f4",
-                "reference": "ccb1e9730a27604fd6b55c2d220de102e22082f4",
+                "url": "https://api.github.com/repos/hyperf/framework/zipball/0b27f9c6068c74c971e06aa7f44f4c9138844a8c",
+                "reference": "0b27f9c6068c74c971e06aa7f44f4c9138844a8c",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1526,7 +1531,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 },
                 "hyperf": {
                     "config": "Hyperf\\Framework\\ConfigProvider"
@@ -1551,20 +1556,20 @@
                 "php",
                 "swoole"
             ],
-            "time": "2021-06-01T14:01:53+00:00"
+            "time": "2021-07-18T06:50:14+00:00"
         },
         {
             "name": "hyperf/guzzle",
-            "version": "v2.2.0-beta1",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/guzzle.git",
-                "reference": "4dfa52b93676165a533387aa8c0a25929c75029b"
+                "reference": "cae5b639bf41db207618c09d9e227de3bf5efed8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/guzzle/zipball/4dfa52b93676165a533387aa8c0a25929c75029b",
-                "reference": "4dfa52b93676165a533387aa8c0a25929c75029b",
+                "url": "https://api.github.com/repos/hyperf/guzzle/zipball/cae5b639bf41db207618c09d9e227de3bf5efed8",
+                "reference": "cae5b639bf41db207618c09d9e227de3bf5efed8",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1586,7 +1591,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 },
                 "hyperf": {
                     "config": "Hyperf\\Guzzle\\ConfigProvider"
@@ -1608,20 +1613,20 @@
                 "php",
                 "swoole"
             ],
-            "time": "2021-06-07T01:50:48+00:00"
+            "time": "2021-07-18T06:50:14+00:00"
         },
         {
             "name": "hyperf/http-message",
-            "version": "v2.2.0-beta1",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/http-message.git",
-                "reference": "9252593fbc7c1d1ad39baa378d0ceeb9994608d3"
+                "reference": "0f2d7657a6470a6ba0c56fdcc98712e010325651"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/http-message/zipball/9252593fbc7c1d1ad39baa378d0ceeb9994608d3",
-                "reference": "9252593fbc7c1d1ad39baa378d0ceeb9994608d3",
+                "url": "https://api.github.com/repos/hyperf/http-message/zipball/0f2d7657a6470a6ba0c56fdcc98712e010325651",
+                "reference": "0f2d7657a6470a6ba0c56fdcc98712e010325651",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1641,7 +1646,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 },
                 "hyperf": {
                     "config": "Hyperf\\HttpMessage\\ConfigProvider"
@@ -1663,20 +1668,20 @@
                 "php",
                 "swoole"
             ],
-            "time": "2021-05-11T08:15:42+00:00"
+            "time": "2021-07-18T06:50:14+00:00"
         },
         {
             "name": "hyperf/http-server",
-            "version": "v2.2.0-rc1",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/http-server.git",
-                "reference": "d6ac614d343f7d3d2cec0b3d38ef715513310299"
+                "reference": "1f12e36372db5e4d52f6633c0cc863240aa0e7ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/http-server/zipball/d6ac614d343f7d3d2cec0b3d38ef715513310299",
-                "reference": "d6ac614d343f7d3d2cec0b3d38ef715513310299",
+                "url": "https://api.github.com/repos/hyperf/http-server/zipball/1f12e36372db5e4d52f6633c0cc863240aa0e7ec",
+                "reference": "1f12e36372db5e4d52f6633c0cc863240aa0e7ec",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1703,7 +1708,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 },
                 "hyperf": {
                     "config": "Hyperf\\HttpServer\\ConfigProvider"
@@ -1727,20 +1732,20 @@
                 "php",
                 "swoole"
             ],
-            "time": "2021-06-18T10:18:34+00:00"
+            "time": "2021-07-18T06:50:14+00:00"
         },
         {
             "name": "hyperf/logger",
-            "version": "v2.2.0-beta1",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/logger.git",
-                "reference": "e09e2b081ee49707cdd1eeacb65c19bde3caa720"
+                "reference": "1255b27d6f3a06696913830b0304e9b4b94f3222"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/logger/zipball/e09e2b081ee49707cdd1eeacb65c19bde3caa720",
-                "reference": "e09e2b081ee49707cdd1eeacb65c19bde3caa720",
+                "url": "https://api.github.com/repos/hyperf/logger/zipball/1255b27d6f3a06696913830b0304e9b4b94f3222",
+                "reference": "1255b27d6f3a06696913830b0304e9b4b94f3222",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1760,7 +1765,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 },
                 "hyperf": {
                     "config": "Hyperf\\Logger\\ConfigProvider"
@@ -1782,20 +1787,20 @@
                 "logger",
                 "php"
             ],
-            "time": "2021-05-11T08:15:42+00:00"
+            "time": "2021-07-18T06:50:14+00:00"
         },
         {
             "name": "hyperf/memory",
-            "version": "v2.2.0-beta1",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/memory.git",
-                "reference": "1ffd27275cbfc45fbdd3aa13977915a95dc9892b"
+                "reference": "e26bfea8c73af4604b217a1b449fbc64a06985d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/memory/zipball/1ffd27275cbfc45fbdd3aa13977915a95dc9892b",
-                "reference": "1ffd27275cbfc45fbdd3aa13977915a95dc9892b",
+                "url": "https://api.github.com/repos/hyperf/memory/zipball/e26bfea8c73af4604b217a1b449fbc64a06985d3",
+                "reference": "e26bfea8c73af4604b217a1b449fbc64a06985d3",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1810,7 +1815,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 },
                 "hyperf": {
                     "config": "Hyperf\\Memory\\ConfigProvider"
@@ -1833,20 +1838,20 @@
                 "php",
                 "swoole"
             ],
-            "time": "2021-05-11T08:15:42+00:00"
+            "time": "2021-07-18T06:50:14+00:00"
         },
         {
             "name": "hyperf/model-listener",
-            "version": "v2.2.0-beta2",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/model-listener.git",
-                "reference": "6dd1526bcf145efbfbc7adbe14b6ed4da19a6631"
+                "reference": "fa82b1ac4cf00d3c4f2705e1a0604823b30073e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/model-listener/zipball/6dd1526bcf145efbfbc7adbe14b6ed4da19a6631",
-                "reference": "6dd1526bcf145efbfbc7adbe14b6ed4da19a6631",
+                "url": "https://api.github.com/repos/hyperf/model-listener/zipball/fa82b1ac4cf00d3c4f2705e1a0604823b30073e5",
+                "reference": "fa82b1ac4cf00d3c4f2705e1a0604823b30073e5",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1868,7 +1873,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 },
                 "hyperf": {
                     "config": "Hyperf\\ModelListener\\ConfigProvider"
@@ -1891,20 +1896,20 @@
                 "php",
                 "swoole"
             ],
-            "time": "2021-06-15T15:48:30+00:00"
+            "time": "2021-07-18T06:50:14+00:00"
         },
         {
             "name": "hyperf/pool",
-            "version": "v2.2.0-rc1",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/pool.git",
-                "reference": "731cec61b220350e11402b9d557e593397e84080"
+                "reference": "80c02966b9cb8ac939b8c52f6d4981206d69c57d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/pool/zipball/731cec61b220350e11402b9d557e593397e84080",
-                "reference": "731cec61b220350e11402b9d557e593397e84080",
+                "url": "https://api.github.com/repos/hyperf/pool/zipball/80c02966b9cb8ac939b8c52f6d4981206d69c57d",
+                "reference": "80c02966b9cb8ac939b8c52f6d4981206d69c57d",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1922,7 +1927,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 },
                 "hyperf": {
                     "config": "Hyperf\\Pool\\ConfigProvider"
@@ -1945,20 +1950,20 @@
                 "php",
                 "swoole"
             ],
-            "time": "2021-06-29T01:51:46+00:00"
+            "time": "2021-07-18T06:50:14+00:00"
         },
         {
             "name": "hyperf/process",
-            "version": "v2.2.0-rc2",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/process.git",
-                "reference": "d0daf560a80c4e9c2f27c83ac43e377354612616"
+                "reference": "7eb4e7fa974d3a703c60a1478813a9027409db7f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/process/zipball/d0daf560a80c4e9c2f27c83ac43e377354612616",
-                "reference": "d0daf560a80c4e9c2f27c83ac43e377354612616",
+                "url": "https://api.github.com/repos/hyperf/process/zipball/7eb4e7fa974d3a703c60a1478813a9027409db7f",
+                "reference": "7eb4e7fa974d3a703c60a1478813a9027409db7f",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1982,7 +1987,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 },
                 "hyperf": {
                     "config": "Hyperf\\Process\\ConfigProvider"
@@ -2004,20 +2009,20 @@
                 "php",
                 "process"
             ],
-            "time": "2021-06-25T02:04:45+00:00"
+            "time": "2021-07-18T06:50:14+00:00"
         },
         {
             "name": "hyperf/redis",
-            "version": "v2.2.0-beta1",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/redis.git",
-                "reference": "dc8a82988723ac0107bf0d90b6a47c9090bc7675"
+                "reference": "daeb7cd985f02a669a2a7261bd07e5edbe90ccd3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/redis/zipball/dc8a82988723ac0107bf0d90b6a47c9090bc7675",
-                "reference": "dc8a82988723ac0107bf0d90b6a47c9090bc7675",
+                "url": "https://api.github.com/repos/hyperf/redis/zipball/daeb7cd985f02a669a2a7261bd07e5edbe90ccd3",
+                "reference": "daeb7cd985f02a669a2a7261bd07e5edbe90ccd3",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -2041,7 +2046,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 },
                 "hyperf": {
                     "config": "Hyperf\\Redis\\ConfigProvider"
@@ -2064,20 +2069,20 @@
                 "pool",
                 "redis"
             ],
-            "time": "2021-05-11T08:15:42+00:00"
+            "time": "2021-07-18T06:50:14+00:00"
         },
         {
             "name": "hyperf/server",
-            "version": "v2.2.0-beta1",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/server.git",
-                "reference": "b3a5ce6e9b974f30503dba642e08a7dfe6d5745c"
+                "reference": "491a1da8bda8cf2aacd2fae1e4370eac3e2e18eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/server/zipball/b3a5ce6e9b974f30503dba642e08a7dfe6d5745c",
-                "reference": "b3a5ce6e9b974f30503dba642e08a7dfe6d5745c",
+                "url": "https://api.github.com/repos/hyperf/server/zipball/491a1da8bda8cf2aacd2fae1e4370eac3e2e18eb",
+                "reference": "491a1da8bda8cf2aacd2fae1e4370eac3e2e18eb",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -2102,7 +2107,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 },
                 "hyperf": {
                     "config": "Hyperf\\Server\\ConfigProvider"
@@ -2125,20 +2130,20 @@
                 "server",
                 "swoole"
             ],
-            "time": "2021-05-24T07:50:44+00:00"
+            "time": "2021-07-18T06:50:14+00:00"
         },
         {
             "name": "hyperf/utils",
-            "version": "v2.2.0-beta2",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/utils.git",
-                "reference": "38bd2b5a2a3d2a5b39db4434e80528c471eab4ea"
+                "reference": "c9635afa0d975783b7b4708030de2c3e2766e3e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/utils/zipball/38bd2b5a2a3d2a5b39db4434e80528c471eab4ea",
-                "reference": "38bd2b5a2a3d2a5b39db4434e80528c471eab4ea",
+                "url": "https://api.github.com/repos/hyperf/utils/zipball/c9635afa0d975783b7b4708030de2c3e2766e3e3",
+                "reference": "c9635afa0d975783b7b4708030de2c3e2766e3e3",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -2167,7 +2172,7 @@
                     "config": "Hyperf\\Utils\\ConfigProvider"
                 },
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 }
             },
             "autoload": {
@@ -2190,7 +2195,7 @@
                 "swoole",
                 "utils"
             ],
-            "time": "2021-06-15T15:48:30+00:00"
+            "time": "2021-07-18T06:50:14+00:00"
         },
         {
             "name": "laminas/laminas-mime",
@@ -2374,16 +2379,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "2.2.0",
+            "version": "2.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "1cb1cde8e8dd0f70cc0fe51354a59acad9302084"
+                "reference": "9738e495f288eec0b187e310b7cdbbb285777dbe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/1cb1cde8e8dd0f70cc0fe51354a59acad9302084",
-                "reference": "1cb1cde8e8dd0f70cc0fe51354a59acad9302084",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/9738e495f288eec0b187e310b7cdbbb285777dbe",
+                "reference": "9738e495f288eec0b187e310b7cdbbb285777dbe",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -2408,7 +2413,7 @@
                 "php-amqplib/php-amqplib": "~2.4",
                 "php-console/php-console": "^3.1.3",
                 "phpspec/prophecy": "^1.6.1",
-                "phpstan/phpstan": "^0.12.59",
+                "phpstan/phpstan": "^0.12.91",
                 "phpunit/phpunit": "^8.5",
                 "predis/predis": "^1.1",
                 "rollbar/rollbar": "^1.3",
@@ -2468,20 +2473,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-12-14T13:15:25+00:00"
+            "time": "2021-07-14T11:56:39+00:00"
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.49.0",
+            "version": "2.50.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "93d9db91c0235c486875d22f1e08b50bdf3e6eee"
+                "reference": "f47f17d17602b2243414a44ad53d9f8b9ada5fdb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/93d9db91c0235c486875d22f1e08b50bdf3e6eee",
-                "reference": "93d9db91c0235c486875d22f1e08b50bdf3e6eee",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/f47f17d17602b2243414a44ad53d9f8b9ada5fdb",
+                "reference": "f47f17d17602b2243414a44ad53d9f8b9ada5fdb",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -2539,15 +2544,15 @@
                 {
                     "name": "Brian Nesbitt",
                     "email": "brian@nesbot.com",
-                    "homepage": "http://nesbot.com"
+                    "homepage": "https://markido.com"
                 },
                 {
                     "name": "kylekatarnls",
-                    "homepage": "http://github.com/kylekatarnls"
+                    "homepage": "https://github.com/kylekatarnls"
                 }
             ],
             "description": "An API extension for DateTime that supports 281 different languages.",
-            "homepage": "http://carbon.nesbot.com",
+            "homepage": "https://carbon.nesbot.com",
             "keywords": [
                 "date",
                 "datetime",
@@ -2563,7 +2568,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-06-02T07:31:40+00:00"
+            "time": "2021-06-28T22:38:45+00:00"
         },
         {
             "name": "nikic/fast-route",
@@ -2619,16 +2624,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.10.5",
+            "version": "v4.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "4432ba399e47c66624bc73c8c0f811e5c109576f"
+                "reference": "fe14cf3672a149364fb66dfe11bf6549af899f94"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/4432ba399e47c66624bc73c8c0f811e5c109576f",
-                "reference": "4432ba399e47c66624bc73c8c0f811e5c109576f",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/fe14cf3672a149364fb66dfe11bf6549af899f94",
+                "reference": "fe14cf3672a149364fb66dfe11bf6549af899f94",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -2673,7 +2678,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2021-05-03T19:11:20+00:00"
+            "time": "2021-07-03T13:36:55+00:00"
         },
         {
             "name": "php-di/phpdoc-reader",
@@ -2998,6 +3003,64 @@
                 "psr-18"
             ],
             "time": "2020-06-29T06:28:15+00:00"
+        },
+        {
+            "name": "psr/http-factory",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-factory.git",
+                "reference": "12ac7fcd07e5b077433f5f2bee95b3a771bf61be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-factory/zipball/12ac7fcd07e5b077433f5f2bee95b3a771bf61be",
+                "reference": "12ac7fcd07e5b077433f5f2bee95b3a771bf61be",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=7.0.0",
+                "psr/http-message": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interfaces for PSR-7 HTTP message factories",
+            "keywords": [
+                "factory",
+                "http",
+                "message",
+                "psr",
+                "psr-17",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "time": "2019-04-30T12:38:16+00:00"
         },
         {
             "name": "psr/http-message",
@@ -4149,16 +4212,16 @@
         },
         {
             "name": "symfony/string",
-            "version": "v5.3.2",
+            "version": "v5.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "0732e97e41c0a590f77e231afc16a327375d50b0"
+                "reference": "bd53358e3eccec6a670b5f33ab680d8dbe1d4ae1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/0732e97e41c0a590f77e231afc16a327375d50b0",
-                "reference": "0732e97e41c0a590f77e231afc16a327375d50b0",
+                "url": "https://api.github.com/repos/symfony/string/zipball/bd53358e3eccec6a670b5f33ab680d8dbe1d4ae1",
+                "reference": "bd53358e3eccec6a670b5f33ab680d8dbe1d4ae1",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -4231,20 +4294,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-06-06T09:51:56+00:00"
+            "time": "2021-06-27T11:44:38+00:00"
         },
         {
             "name": "symfony/translation",
-            "version": "v5.3.2",
+            "version": "v5.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
-                "reference": "7e2603bcc598e14804c4d2359d8dc4ee3c40391b"
+                "reference": "380b8c9e944d0e364b25f28e8e555241eb49c01c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/7e2603bcc598e14804c4d2359d8dc4ee3c40391b",
-                "reference": "7e2603bcc598e14804c4d2359d8dc4ee3c40391b",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/380b8c9e944d0e364b25f28e8e555241eb49c01c",
+                "reference": "380b8c9e944d0e364b25f28e8e555241eb49c01c",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -4329,7 +4392,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-06-06T09:51:56+00:00"
+            "time": "2021-06-27T12:22:47+00:00"
         },
         {
             "name": "symfony/translation-contracts",
@@ -4809,16 +4872,16 @@
         },
         {
             "name": "hyperf/devtool",
-            "version": "v2.2.0-beta1",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/devtool.git",
-                "reference": "25619b7b6134e1a318da6bc7169128c219167ba0"
+                "reference": "91ff711fbbc36a7c45bcff321850e1fe04964b09"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/devtool/zipball/25619b7b6134e1a318da6bc7169128c219167ba0",
-                "reference": "25619b7b6134e1a318da6bc7169128c219167ba0",
+                "url": "https://api.github.com/repos/hyperf/devtool/zipball/91ff711fbbc36a7c45bcff321850e1fe04964b09",
+                "reference": "91ff711fbbc36a7c45bcff321850e1fe04964b09",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -4837,7 +4900,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 },
                 "hyperf": {
                     "config": "Hyperf\\Devtool\\ConfigProvider"
@@ -4860,20 +4923,20 @@
                 "php",
                 "swoole"
             ],
-            "time": "2021-06-05T05:42:37+00:00"
+            "time": "2021-07-18T06:50:14+00:00"
         },
         {
             "name": "hyperf/ide-helper",
-            "version": "v2.2.0-rc1",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/ide-helper.git",
-                "reference": "e55f202c3aa09137f585df77df6cefe2c5512174"
+                "reference": "f0735f0abd2d11c0024b790e8a69b8fe7874747e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/ide-helper/zipball/e55f202c3aa09137f585df77df6cefe2c5512174",
-                "reference": "e55f202c3aa09137f585df77df6cefe2c5512174",
+                "url": "https://api.github.com/repos/hyperf/ide-helper/zipball/f0735f0abd2d11c0024b790e8a69b8fe7874747e",
+                "reference": "f0735f0abd2d11c0024b790e8a69b8fe7874747e",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -4885,7 +4948,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -4900,20 +4963,20 @@
                 "php",
                 "swoole"
             ],
-            "time": "2021-06-20T02:18:28+00:00"
+            "time": "2021-07-18T06:50:14+00:00"
         },
         {
             "name": "hyperf/testing",
-            "version": "v2.2.0-beta1",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/testing.git",
-                "reference": "12631d49e5be34e5b555794b9711c5064271416e"
+                "reference": "43679ae8f3d78b6f386c3f28673e55e774402a62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/testing/zipball/12631d49e5be34e5b555794b9711c5064271416e",
-                "reference": "12631d49e5be34e5b555794b9711c5064271416e",
+                "url": "https://api.github.com/repos/hyperf/testing/zipball/43679ae8f3d78b6f386c3f28673e55e774402a62",
+                "reference": "43679ae8f3d78b6f386c3f28673e55e774402a62",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -4937,7 +5000,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 }
             },
             "autoload": {
@@ -4955,20 +5018,20 @@
                 "swoole",
                 "testing"
             ],
-            "time": "2021-05-11T08:15:42+00:00"
+            "time": "2021-07-18T06:50:14+00:00"
         },
         {
             "name": "hyperf/watcher",
-            "version": "v2.2.0-beta1",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hyperf/watcher.git",
-                "reference": "21f13d3c05c5035d4fc781486770a512a8247fb4"
+                "reference": "9973aa893f59d3753dd2f2445f67413399194ce0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hyperf/watcher/zipball/21f13d3c05c5035d4fc781486770a512a8247fb4",
-                "reference": "21f13d3c05c5035d4fc781486770a512a8247fb4",
+                "url": "https://api.github.com/repos/hyperf/watcher/zipball/9973aa893f59d3753dd2f2445f67413399194ce0",
+                "reference": "9973aa893f59d3753dd2f2445f67413399194ce0",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -4987,7 +5050,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 },
                 "hyperf": {
                     "config": "Hyperf\\Watcher\\ConfigProvider"
@@ -5007,7 +5070,7 @@
                 "hyperf",
                 "php"
             ],
-            "time": "2021-06-02T05:18:33+00:00"
+            "time": "2021-07-18T06:50:14+00:00"
         },
         {
             "name": "mockery/mockery",
@@ -5550,16 +5613,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "0.12.90",
+            "version": "0.12.92",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "f0e4b56630fc3d4eb5be86606d07212ac212ede4"
+                "reference": "64d4c5dc8ea96972bc18432d137a330239a5d2b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/f0e4b56630fc3d4eb5be86606d07212ac212ede4",
-                "reference": "f0e4b56630fc3d4eb5be86606d07212ac212ede4",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/64d4c5dc8ea96972bc18432d137a330239a5d2b2",
+                "reference": "64d4c5dc8ea96972bc18432d137a330239a5d2b2",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -5612,7 +5675,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-06-18T07:15:38+00:00"
+            "time": "2021-07-10T13:53:49+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -5944,16 +6007,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "9.5.6",
+            "version": "9.5.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "fb9b8333f14e3dce976a60ef6a7e05c7c7ed8bfb"
+                "reference": "d0dc8b6999c937616df4fb046792004b33fd31c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/fb9b8333f14e3dce976a60ef6a7e05c7c7ed8bfb",
-                "reference": "fb9b8333f14e3dce976a60ef6a7e05c7c7ed8bfb",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/d0dc8b6999c937616df4fb046792004b33fd31c5",
+                "reference": "d0dc8b6999c937616df4fb046792004b33fd31c5",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -6045,7 +6108,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-06-23T05:14:38+00:00"
+            "time": "2021-07-19T06:14:47+00:00"
         },
         {
             "name": "sebastian/cli-parser",
@@ -7045,16 +7108,16 @@
         },
         {
             "name": "swoole/ide-helper",
-            "version": "4.6.7",
+            "version": "4.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swoole/ide-helper.git",
-                "reference": "0d1409b8274117addfe64d3ea412812a69807411"
+                "reference": "8c181b9cbe9980778f0aa7e88f8ebf1506f28122"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swoole/ide-helper/zipball/0d1409b8274117addfe64d3ea412812a69807411",
-                "reference": "0d1409b8274117addfe64d3ea412812a69807411",
+                "url": "https://api.github.com/repos/swoole/ide-helper/zipball/8c181b9cbe9980778f0aa7e88f8ebf1506f28122",
+                "reference": "8c181b9cbe9980778f0aa7e88f8ebf1506f28122",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -7089,13 +7152,9 @@
                 {
                     "url": "https://github.com/swoole",
                     "type": "github"
-                },
-                {
-                    "url": "https://opencollective.com/swoole-src",
-                    "type": "open_collective"
                 }
             ],
-            "time": "2021-05-14T16:05:16+00:00"
+            "time": "2021-07-16T18:20:17+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -7269,16 +7328,16 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v5.3.0",
+            "version": "v5.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "348116319d7fb7d1faa781d26a48922428013eb2"
+                "reference": "19b71c8f313b411172dd5f470fd61f24466d79a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/348116319d7fb7d1faa781d26a48922428013eb2",
-                "reference": "348116319d7fb7d1faa781d26a48922428013eb2",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/19b71c8f313b411172dd5f470fd61f24466d79a9",
+                "reference": "19b71c8f313b411172dd5f470fd61f24466d79a9",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -7330,7 +7389,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-26T17:43:10+00:00"
+            "time": "2021-06-30T07:27:52+00:00"
         },
         {
             "name": "symfony/options-resolver",
